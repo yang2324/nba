@@ -1,0 +1,118 @@
+* {box-sizing: border-box;margin: 0;padding: 0;}
+ 
+body {font-family: Arial;padding: 10px;background: #f1f1f1;width: 85%;margin: 0 auto;box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.8);}
+
+/* 头部标题 */
+.header {background: white;margin: 0;padding: 0;}
+.header_top{background-color: black;padding: 10px;overflow: hidden;}
+.top_left{width: 50%;float: left;}
+.top_left h1{color: white;}
+
+.top_right{width: 50%;float: right;}
+.top_right .logo{margin: 0 60%;border-radius: 50%;}
+.top_right .logo:hover{box-shadow: 0px 8px 16px 0px deepskyblue;}
+
+/* 导航条 */
+.topnav {overflow: hidden;background-color: black;padding-left: 15px;padding-right: 15px;margin-left: auto;margin-right: auto;}
+.topnav .nav{width: 100%;overflow: hidden;margin: 0 auto;}
+.topnav .nav ul{list-style-type: none;float: none;margin: 0 auto;text-align: center;}
+.nav ul li{float: none;display: inline-block;padding: 14px 40px;}
+
+.nav li a{text-decoration: none;font-size: 22px;color: white;text-align: center;display: block;}
+ 
+/* 链接颜色修改 */
+.nav li:hover {background-color: red;}
+ 
+#topnav_img{padding-bottom: 5px;}
+#lunbotu{width:100%;height: 555px;position: relative;overflow: hidden;border: 1px solid whitesmoke;} 
+.pic{width: 100%;}
+ 
+/* 创建两列 */
+.row{background-color: black;width: 100%;overflow: hidden;}
+.column{width: 80%;margin: 0 auto;}
+/* Left column */
+.leftcolumn {   float: left;width: 50%;}
+ 
+/* 右侧栏 */
+.rightcolumn {float: left;width: 50%;}
+ 
+/* 图像部分 */
+.fakeimg {width: 100%;height: 500px;box-shadow: 0px 8px 16px 0px white;background-color: rgb(34,34,34);}
+.fakeimg img{width: 100%;}
+
+.content_intro{padding: 50px 0 65px 30px;}
+.content_intro h2{padding-bottom:10px;color: white;}
+.content_intro p{color: white;}
+
+.kobe .kobe_img{width: 150px;height: 50px;margin-top: 15px;}
+.photo{width: 100%;margin-top: 10px;}
+.photo .photo_img{width: 90%;margin: 0 auto;text-align: center;}
+.photo img{display: block;max-width: 100%;height: 170px;}
+.img01,.img02,.img03{float: left;width: 30%;margin-right: 10px;border: 1px solid white;}
+
+/* 文章卡片效果 */
+.card {background-color: black;padding: 40px 2px 40px 0;}
+ 
+.huigu{width: 100%;height: 250px;overflow: hidden;} 
+#PhotosView{width: 100%;position: relative;margin-top: 2px;}
+#images_ul{list-style-type: none;left: 0;top: 0;position: absolute;}
+#images_ul li{float: left;list-style: none;cursor: pointer;}
+ 
+ 
+.experience{width: 100%;background-color: whitesmoke;} 
+.intro{width: 85%; margin: 0 auto; text-align: center;}
+.intro h2{margin-top: 20px;margin-bottom: 20px;color: red;font-size: 26px;}
+.intro .kobe_intro{width: 95%; margin: 0 auto; }
+.kobe_intro img{border-radius: 50%;border: 1px solid red;}
+.kobe_intro img:hover{border: 2px solid blueviolet;}
+#first,#second,#thirdly,#fourth,#fifth{float: left;width: 20%;}
+.first,.second,.thirdly,.fourth,.fifth{padding-top: 10px;width: 90%;margin: 0 auto;}
+.second p,.first p,.thirdly p,.fourth p,.fifth p{margin-top: 10px;color: #999;}
+ 
+#topnav_p{padding-bottom: 5px;}
+#lunbotu_p{width:100%;height: 400px;position: relative;overflow: hidden;border: 1px solid whitesmoke;} 
+.back{z-index: -1;position: absolute;height: 400px;width: 100%;}
+
+.text{width: 90%;margin: 0 auto;text-align: center;}
+.text h1{color: white;padding-top: 30px;font-size: 36px;}
+#lunbo_text{width: 85%;margin: 0 auto;font-size: 26px;color: white;position: relative;overflow: hidden;margin-top: 30px;}
+ 
+ 
+.text_img{width: 100%;background-color: whitesmoke;}
+.mian_textimg{width: 100%;margin: 0 auto;text-align: center;}
+.userMenu h2{color: red;}
+.userMenu{list-style-type: none;padding: 15px 15px;}
+.userMenu li{text-align: center;cursor: pointer;display: inline-block;}	
+.userMenu .desc{padding: 5px;text-align: center;}
+.userMenu .img{margin: 15px 20px;width:200px;border: 1px solid #ccc;overflow: hidden;}
+.userMenu .img img{width: 100%;height: 100px;}			
+.userMenu .img:hover{border: 2px solid #777;}
+
+
+/* 列后面清除浮动 */
+.row:after,.huigu:after,.experience,.topnav_p:after,.text_img:after {content: "";display: table;clear: both;}
+ 
+/* 底部 */
+.footer {padding: 20px;text-align: center;background: rgb(3,4,9);margin-top: 20px;}
+.footer_content ul{list-style-type: none;}
+.footer_content ul li{display: inline-block;padding: 10px;}
+.footer_content a{text-decoration: none;color: white;font-size: 18px;border-right: 1px solid white;}
+.footer_content a:hover{color: cyan;}
+.footer_content h5{margin-top: 10px;color: white;}
+.footer_content p{color: white;}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}

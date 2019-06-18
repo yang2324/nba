@@ -1,0 +1,80 @@
+* {box-sizing: border-box;}
+
+body {font-family: Arial;background: #f1f1f1;}
+.main{width: 85%;margin: 0 auto;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+a{text-decoration: none;color: #000000;}
+ 
+/* 头部标题 */
+.header {padding: 30px;background: white;}
+.header h1 {font-size: 50px;}
+.header_left{width: 38%;display: inline-block;float: left;}
+.header_left .logo{border-radius: 50%;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+.header_left .logo:hover{box-shadow: 0px 8px 16px 0px cyan}
+.header_right{width: 62%;display: inline-block;}
+.header_right .intro{margin: 0; padding: 0;}
+.intro p{margin-left: 60px;}
+
+/* 导航条 */
+.topnav {overflow: hidden;background-color: black;margin-left: auto;margin-right: auto;}
+.topnav .to_nav{width: 100%;overflow: hidden;margin: 0 auto;}
+.topnav .to_nav ul{list-style-type: none;float: none;margin: 0 auto;text-align: center;margin-right: 30px;}
+.to_nav ul li{float: none;display: inline-block;padding: 14px 40px;}
+
+.to_nav li a{text-decoration: none;font-size: 22px;color: white;text-align: center;display: block;}
+ 
+/* 链接颜色修改 */
+.to_nav li:hover {background-color: red;}
+
+.life{display: inline-block;}
+.nav{display: none;position: absolute;background-color: #333;min-width: 160px;z-index: 1;margin-left: -35px;}
+.nav a{display: block;text-decoration: none;padding: 14px 16px;}
+.life:hover .nav{display: block;background-color: bisque;}
+.nav a:hover{color: blueviolet;}
+
+/* 创建两列 */
+/* Left column */
+.leftcolumn {float: left;width: 75%;}
+ 
+/* 右侧栏 */
+.rightcolumn {float: left;width: 25%;background-color: #f1f1f1;padding-left: 20px;}
+ 
+/* 图像部分 */
+.bottimg {background-color: #aaa;width: 100%;column-count:3;overflow: hidden;position: relative;}
+.bottimg ul{position: absolute;}
+.bottimg li{padding: 10px;}
+
+#fakeimg{width: 100%;position: relative;overflow: hidden;background-color: black;}
+#fakeimg ul{position:absolute;left: 0;top: 0;}
+#fakeimg ul li {float: left;list-style: none;cursor: pointer;}
+
+/* 文章卡片效果 */
+.card {background-color: white;padding: 20px;margin-top: 20px;}
+ 
+/* 列后面清除浮动 */
+.row:after {content: "";display: table;clear: both;}
+ 
+/* 底部 */
+.footer {padding: 20px;text-align: center;background: rgb(3,4,9);margin-top: 20px;}
+.footer_content ul{list-style-type: none;}
+.footer_content ul li{display: inline-block;padding: 10px;}
+.footer_content a{text-decoration: none;color: white;font-size: 18px;border-right: 1px solid white;}
+.footer_content a:hover{color: cyan;}
+.footer_content h5{margin-top: 10px;color: white;}
+.footer_content p{color: white;}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn,.header_left,.header_right {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a,.footer_content li {
+    float: none;
+    width: 100%;
+  }
+}

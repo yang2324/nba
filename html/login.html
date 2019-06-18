@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="../css/login.css" />
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js" ></script>
+	<script type="text/javascript" src="../js/login.js" ></script>
+	<script></script>
+</head>
+<body>
+	<div id="content">
+		<div class="header">
+			<div class="logo">
+				<a href="../index.html"><img src="../img/logo.jpg" width="150" height="70"/></a>
+			</div>
+			<ul class="lan">
+				<li>
+					<img src="../img/lanqiu.jpg" width="60" height="60" />
+				</li>
+				<li>
+					<img src="../img/l01.jpg" width="60" height="60"/>
+				</li>
+				<li>
+					<img src="../img/l02.jpg" width="60" height="60" />
+				</li>
+			</ul>
+			
+		</div>
+		<div class="main">
+			<div class="main_left">
+				<div id="left">
+					<a href="#"><img class="pic" style="display:block;" src="../img/nbaquan.jpg" width="673" height="558"/></a> 
+					<a href="#"><img class="pic" src="../img/nbaquan02.jpg" width="670" height="555"/></a>
+					<a href="#"><img class="pic" src="../img/nbaquan03.jpg" width="670" height="555"/></a>
+				</div>
+			</div>
+			<div class="main_right">
+				<div class="login_input">
+					<p><a href="register.html">立刻注册</a><br /></p>
+					
+					<form name="form1" onsubmit="return checkForm()">
+						<div id="result_username"></div>
+						<input type="text" id="username" name="username" class="input" placeholder="请输入用户名"/ onfocus="focus_username()" onblur="blur_username()"><br />
+						<div id="result_userpwd"></div>
+						<input type="password" id="password" name="userpwd" class="input" placeholder="请输入密码"/ onfocus="focus_userpwd()" onblur="blur_userpwd()"><br />
+						<input type="checkbox" />
+						<span>
+							<a href>记住密码</a>
+						</span>
+						<span>
+							<a href="#">忘记密码？</a>
+						</span>
+						<br />
+						<button type="submit">登录</button>
+					</form>
+					
+					<a href="#">无需注册 直接登录</&nb></a>
+					<ul>
+						<a href="#">
+							<li>
+								<img src="../img/QQ.jpg" width="43" height="42" alt />
+								<p class="p">QQ登录</p>
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<img src="../img/weixin.png" width="43" height="42" alt />
+								<p class="p">微信登录</p>
+							</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_content">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="aifosen.html">艾佛森</a></li>
+					<li><a href="kobe.html">科比</a></li>
+					<li><a href="james.html">詹姆斯</a></li>
+					<li><a href="duncan.html">邓肯</a></li>
+					<li><a href="oneal.html">奥尼尔</a></li>
+				</ul>
+				<p>NBA国际职业篮球联盟</p>
+				<p>汇集了世界上最精英的篮球运动员，篮球的最高殿堂</p>
+				<h5>Copyright © 1946-2019 NBA国际职业篮球联盟 美ICP备16081451-1号 All Right</h5>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

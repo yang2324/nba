@@ -1,0 +1,147 @@
+* {box-sizing: border-box;margin: 0;padding: 0;}
+body {font-family: Arial;background: #f1f1f1;width: 85%;margin: 0 auto;box-shadow: 0px 80px 160px 0px rgba(0,0,0,0.8);}
+
+ /******************* header ********************/
+.header_top{background:rgb(12,11,17) ;overflow: auto;}
+.nav_left{width: 30%;float: left;}
+.container_left{list-style-type: none;}
+.container_left li{display: inline-block;padding: 20px;}
+.container_left li a{text-decoration: none;color: white;}
+.container_left a:hover{color: orange;}
+.nba{display: inline-block;}
+.nba_team{display: none;position: absolute;background-color: #CCCCCC;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}		
+.nba_team a{display: block;color: black;text-decoration: none;padding: 14px 16px;}
+.nba:hover .nba_team{display: block;}
+
+.nav_right{float: right;width: 70%;}
+.container_right{list-style-type: none;float: right;}
+.container_right li{display: inline-block;padding: 20px;}
+.container_right li a{text-decoration: none;color: white;}
+
+.header_in{overflow: auto;}
+.head_logo{width: 100%;margin-bottom: 5px;overflow: hidden;}
+.logo{width: 25%;float: left;}
+.logo img{border-radius: 10px;padding: 10px;margin-left: 20px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+.search{width: 75%;float: right;padding-top: 10px;margin-top: 20px;}
+.search input{width: 350px;height: 40px;margin-left: 210px;vertical-align: bottom;border: 1px solid #ccc;border-radius: 5px;outline-style: none;}
+.bnt{width: 70px;height: 40px;border: 1px solid #ccc;text-align: center;line-height: 40px;background-color: deepskyblue;border-radius: 10px;cursor: pointer;display: inline-block;margin-left: -4px;}
+
+.head_ul{width: 95%;text-align: center;}
+.head_li{position: relative;}
+.header_nav li{display: inline-block; margin-left: 5%;padding: 14px 0 14px 0;}
+.header_nav li a{text-decoration: none;font-size: 24px;color: #333333;}
+.header_nav a:hover{color: deepskyblue;}
+
+#topnav{padding-bottom: 5px;}
+#lunbotu{width:100%;height: 555px;position: relative;overflow: hidden;} 
+.pic{width: 100%;}
+ 
+.row{background-color: white;}
+.leftcolumn {float: left;width: 50%;}
+.leftcolumn_img{padding: 60px;float: right;}
+.leftcolumn_img img{width: 90%;margin: 30px 0 0 40px; height: 500px;}
+.rightcolumn {float: left;width: 50%;padding-left: 20px;}
+.intro{padding: 240px 130px 265px 0;}
+.intro h2{padding-bottom:10px ;}
+.rightcolumn .aifosen{width: 100px;height: 50px;border: 2px solid #CCCCCC;text-align: center;line-height: 50px;margin-top: 20px;}
+.aifosen:hover{background-color: #CCCCCC;}
+.intro a{text-decoration: none;font-size: 18px;color: black;}
+
+
+/* 列后面清除浮动 */
+.row:after,.content:after,.james:after,.duncan:after,.oneal:after{content: "";display: table;clear: both;}
+ 
+ 
+.content{background: rgb(3,4,9);}
+.content_left{width: 50%;float: left;} 
+.content_intro{padding: 260px 0 265px 130px;}
+.content_intro h2{padding-bottom:10px;color: white;}
+.content_intro p{color: white;}
+.content_right{width: 50%;float: left;} 
+.content_img{padding: 160px 0 165px 0;float: left;}
+.content_img img{width: 90%;margin: 30px 0 0 40px;height: 500px;}
+.content_left .kobe{width: 100px;height: 50px;border: 2px solid #CCCCCC;text-align: center;line-height: 50px;margin-top: 20px;}
+.kobe:hover{background-color: #CCCCCC;}
+.content_intro a{text-decoration: none;font-size: 18px;color: white;}
+ 
+ 
+.james{background-color: white;}
+.james_left{width: 50%;float: left;}
+.james_img{padding: 60px;float: right;}
+.james_img img{width: 90%;margin: 30px 0 0 100px;height: 500px;}
+.james_right{width: 50%;float: left;}
+.james_intro{padding: 265px 130px 265px 80px;}
+.james_intro h2{padding-bottom:10px;}
+.james_right .james_div{width: 100px;height: 50px;border: 2px solid #CCCCCC;text-align: center;line-height: 50px;margin-top: 20px;}
+.james_div:hover{background-color: #CCCCCC;}
+.james_right a{text-decoration: none;font-size: 18px;color: black;}
+ 
+ 
+.duncan{background: rgb(3,4,9);}
+.duncan_left{width: 50%;float: right;} 
+.duncan_intro{padding: 260px 50px 265px 130px;}
+.duncan_intro h2{padding-bottom:10px;color: white;}
+.duncan_intro p{color: white;}
+.duncan_right{width: 50%;float: left;} 
+.duncan_img{padding: 160px 0 165px 0;float: left;}
+.duncan_right .duncan_div{width: 100px;height: 50px;border: 2px solid #CCCCCC;text-align: center;line-height: 50px;margin-top: 20px;}
+.duncan_div:hover{background-color: #CCCCCC;}
+.duncan_right a{text-decoration: none;font-size: 18px;color: white;}
+ 
+ 
+.oneal{background-color: white;}
+.oneal_left{width: 50%;float: left;}
+.oneal_img{padding: 160px 0 165px 0;float: right;}
+.oneal_right{width: 50%;float: left;}
+.oneal_intro{padding: 285px 130px 265px 80px;}
+.oneal_intro h2{padding-bottom:10px;}
+.oneal_right .oneal_div{width: 100px;height: 50px;border: 2px solid #CCCCCC;text-align: center;line-height: 50px;margin-top: 20px;}
+.oneal_div:hover{background-color: #CCCCCC;}
+.oneal_right a{text-decoration: none;font-size: 18px;color: black;}
+ 
+/* 底部 */
+.footer {padding: 20px;text-align: center;background: rgb(3,4,9);margin-top: 20px;}
+.footer_content ul{list-style-type: none;}
+.footer_content ul li{display: inline-block;padding: 10px;}
+.footer_content a{text-decoration: none;color: white;font-size: 18px;border-right: 1px solid white;}
+.footer_content a:hover{color: cyan;}
+.footer_content h5{margin-top: 10px;color: white;}
+.footer_content p{color: white;}
+ 
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  li {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+	.leftcolumn,.rightcolumn,.content_left,.content_right,
+	.nav_left, .nav_right,.james_left,.james_right,.duncan_left,
+ 	.duncan_right,.oneal_left,.oneal_right,.container_right {   
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: none;
+  }
+}

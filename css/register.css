@@ -1,0 +1,52 @@
+*{margin: 0;padding: 0;}
+
+#content{width: 1200px;margin: 0 auto;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);background: whitesmoke;margin-top: 10px;}
+a{text-decoration: none;}
+
+.header{height: 120px;padding-top: 35px;}
+.logo{float: left;}
+.logo img{border-radius: 10px;padding-left: 10px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);margin-left: 20px;}
+.lan{float: right;list-style-type: none;}
+.lan img{border-radius: 50%;}
+.lan li{display: inline-block;padding: 0 50px;}
+
+.main{height: 559px;}
+.main_left{float: left;}
+#left{width: 670px;height: 555px;position: relative;overflow: hidden;} 
+.main_right .login_input{width: 355px;height: 500px;float: right;border: 1px solid #ccc;}
+.login_input>p{height: 52px;line-height: 52px;padding-left: 20px;font-size: 14px;background-color: #F5F5F5;}
+.login_input>p a{float: right;margin-right: 20px;display: inline-block;color: orange;}
+.login_input label{margin-left: 10px;cursor: default;}
+.login_input input{width: 200px;height: 42px; margin: 10px 0; padding-left: 10px;border-radius: 10px;border: 1px solid #ccc;outline-style: none;}
+.login_input #inputCode{width: 150px;}
+.login_input .code{width: 65px;height: 40px;border: 1px solid #ccc;text-align: center;line-height: 40px;display: inline-block;border-radius: 5px;cursor: pointer;vertical-align: middle;}
+.login_input #btn{width: 240px;height: 40px;margin: 10px 50px;background-color: #C81417;cursor: pointer;border-radius: 5px;}
+.login_input #check{width: 13px;height: 13px;margin-left: 20px;}
+.login_input a{display: inline-block;font-size: 12px;}
+
+#reuslt_username,#reuslt_password1,#reuslt_password2,#reuslt_code{width: 300px;height: 20px;margin-left: 10px;}
+
+.footer {padding: 20px;text-align: center;background: #ddd;margin-top: 20px;}
+.footer_content ul{list-style-type: none;}
+.footer_content ul li{display: inline-block;padding: 10px;}
+.footer_content a{text-decoration: none;color: black;font-size: 18px;}
+.footer_content a:hover{color: cyan;}
+.footer_content h5{margin-top: 10px;}
+
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 900px) {
+  .main_left, .main_right {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 900px) {
+  .footer_content li{
+    float: none;
+    width: 100%;
+  }
+}

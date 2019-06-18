@@ -1,0 +1,100 @@
+* {box-sizing: border-box;padding: 0;margin: 0;}
+body {font-family: Arial;padding: 10px;background: #f1f1f1;width: 85%;margin: 0 auto;box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.8);}
+ 
+/********** header **********/
+.header {background: white;margin: 0;padding: 0;}
+.header_top{padding: 10px;overflow: hidden;background: rgb(30,26,27);} 
+.header_toplogo{width: 50%;float: left;padding-left: 30px;}
+.header_toplogo img{width: 150px;height: 60px;}
+.header_toptitle{width: 50%;float: right;padding: 15px;}
+.header_toptitle>p{font-size: 28px;float: right;padding-right: 20px;color: white;}
+.header_toplogo img:hover{box-shadow: 0px 8px 16px 0px deepskyblue;}
+
+.header_down{width: 100%;}
+.header_down .nav{width: 100%;margin: 0 auto;}
+.nav ul{list-style-type: none;float: none;margin: 0 auto;text-align: center;}
+.nav ul li{display: inline-block;float: none;padding: 16px 40px;}
+.nav a{text-decoration: none;color: black;font-size: 22px;}
+.nav a:hover{color: cyan;}
+
+/********** Spurs **********/
+.Spurs h1{text-align: center;padding-bottom: 20px;}
+#spursimg{width:100%;height: 555px;position: relative;overflow: hidden;border: 1px solid whitesmoke;} 
+.pic{width: 100%;}
+
+/********** Parker **********/
+.Parker{background-color: black;}
+.column{width: 90%;margin: 0 auto;}
+.column h1{color: white;padding: 10px;text-align: center;}
+.leftcolumn {float: left;width: 50%;margin-bottom: 30px;box-shadow: 0px 8px 16px 0px white;}
+.columnimg img{width: 100%;height: 100%;}
+.columnimg p{padding-top: 100px;color: white;padding-left: 50px;font-size: 18px;}
+.rightcolumn {float: left;width: 50%;margin-bottom: 30px;box-shadow: 0px 8px 16px 0px white;overflow: auto;}
+
+
+/********** Duncan **********/
+.Duncan h1{text-align: center;padding-bottom: 20px;}
+.duncanimg{width: 100%;margin: 0 auto;text-align: center;}
+.userMenu h2{color: red;}
+.userMenu{list-style-type: none;padding: 15px 15px;}
+.userMenu li{text-align: center;cursor: pointer;display: inline-block;}	
+.userMenu .desc{padding: 5px;text-align: center;}
+.userMenu .img{margin: 15px 20px;width:200px;border: 1px solid #ccc;overflow: hidden;}
+.userMenu .img img{width: 100%;height: 150px;}			
+.userMenu .img:hover{border: 2px solid #777;}
+
+
+/********** Popovici **********/
+.Popovici{background-color: black;}
+.Popovici h1{color: white;text-align: center;padding: 10px;}
+.Popoviciimg{width: 100%;height: 250px;overflow: hidden;padding: 20px;} 
+#PhotosView{width: 100%;position: relative;margin-top: 2px;}
+#images_ul{list-style-type: none;left: 0;top: 0;position: absolute;}
+#images_ul li{float: left;list-style: none;cursor: pointer;}
+
+
+/********** Ginobili **********/
+.content{width: 90%;margin: 0 auto;}
+.content h1{padding: 10px;text-align: center;}
+.leftcontent {float: left;width: 50%;margin-bottom: 30px;box-shadow: 0px 8px 16px 0px black;overflow: auto;}
+.contentimg img{width: 100%;height: 100%;}
+.contentimg p{padding-top: 60px;padding-left: 50px;font-size: 18px;padding-right: 30px;}
+.rightcontent {float: left;width: 50%;margin-bottom: 30px;box-shadow: 0px 8px 16px 0px black;}
+.footer_content img{width: 200px;height: 100px;border-radius: 50%;}
+
+/* 图像部分 */
+.fakeimg {background-color: #aaa;width: 100%;padding: 20px;}
+ 
+/* 文章卡片效果 */
+.card {background-color: white;padding: 20px;margin-top: 20px;}
+ 
+/* 列后面清除浮动 */
+.Spurs:after,.Parker:after,.Duncan:after,.Ginobili:after,.Popovici:after {content: "";display: table;clear: both;}
+ 
+/* 底部 */
+.footer {padding: 20px;text-align: center;background: black;margin-top: 20px;}
+.footer_content ul{list-style-type: none;}
+.footer_content ul li{display: inline-block;padding: 10px;}
+.footer_content a{text-decoration: none;color: white;font-size: 18px;}
+.footer_content a:hover{color: cyan;}
+.footer_content h5{margin-top: 10px;color: white;}
+.footer_content p{color: white;}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+ 

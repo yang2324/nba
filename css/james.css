@@ -1,0 +1,69 @@
+@charset "utf-8";
+body { margin:0; padding:0; width:100%; }
+html { padding:0; margin:0;}
+
+/* main */
+.main {width:100%; padding:0; margin:0 auto; background:#f9f6ea url(images/main_bg.jpg) top repeat-x; }
+.main2 {width:100%; padding:0; margin:0 auto; background:#f9f6ea url(images/main_bg2.jpg) top repeat-x; }
+.resize { width:980px; margin:0 auto;}
+
+/********** header **********/
+.header { }
+
+.block_header {margin:0 auto; width:779px;}
+/* logo */
+.logo { float:left;width:244px;}
+.logo img{border-radius: 50%;}
+/* menu */	
+.menu { width:550px; float:right; height:40px;}
+.menu ul { padding:0px; margin:-10px; list-style:none;float:right;}
+.menu ul li { float:left;}
+.menu ul li a { float:left; margin:0 1px 0 0; padding:14px 14px; color:blueviolet;font-size: 18px; text-decoration:none;}
+.menu ul li a:hover { color:#ffc600; text-decoration:underline;}
+.menu ul li a.active { color:#ffc600; text-decoration:underline;}
+.buttons img{border-radius:10%;}
+/********** slider **********/
+.slider { margin:0 auto 30px auto; padding:0;}
+.gallery { float:right; width:537px; height:244px; margin:25px 20px 0 0; }
+#slider { margin:0; padding:0; list-style:none; }
+#slider ul,#slider li { margin:0; padding:0; list-style:none; }
+#slider li { width:537px; height:244px; overflow:hidden; }
+/* header_text */
+.header_text { margin:0 auto; width:978px; padding:0;}
+.header_text .div {width:978px; margin:0; padding:0; background:#000; border:1px solid #446365;}
+.header_text .div .left1 { float:left; width:350px;}
+.header_text h2 { font:bold 36px Arial, Helvetica, sans-serif; color:#fff; padding:20px 0 20px 20px; margin:0; line-height:1.2em;}
+.header_text p { font:normal 12px Arial, Helvetica, sans-serif; color:#fff; padding:10px 0 0 20px; margin:0; line-height:1.6em;}
+.header_text a { font:bold 12px Arial, Helvetica, sans-serif; color:#40777a; text-decoration:none;}
+.header_text ul.buttons { float:left; padding:20px 0 10px 25px; margin:0; list-style:none;}
+.header_text ul.buttons li { float:left; padding:0 5px; margin:0;}
+
+/********** centre **********/
+
+.centre{margin:0 auto 30px auto; padding:0;}
+.centre_text{margin:0 auto; width:978px; padding:0;}
+.centre_text .centre_div{width:980px; margin:0; padding:0; background:beige; }
+.centre_text .centre_div .centre_left{float:left; width:200px;}
+.centre_left ul{list-style-type: none;margin: 0;padding: 0; width: 200px;background-color: #f1f1f1;}
+.centre_left ul li a{padding: 48px 16px;text-decoration: none;display: block;text-align: center;}
+.centre_left ul li a:hover{background-color: #555;color: white;}
+
+.centre_right{float:right; width:778px; height:550px;overflow: auto;}
+/*隐藏滚动条*/
+.centre_right::-webkit-scrollbar {display: none;}
+.center_content{margin:0 auto 30px auto; padding:0;}
+#center_content p{text-align:left;text-indent:2em;padding: 5px;}
+#heat,#bcavaliers,#lakers{display:none ;}
+
+/********** footer **********/
+
+.footer{margin: 0 auto 30px auto;padding: 0; }
+.footer_content{margin: 0;padding: 10px;background: darkgray;text-align: center;}
+.footer_content ul{list-style-type: none;padding: 0;margin: 0;}
+.footer_content ul li{display: inline-block;font-size: 20px;border-right: 1px solid white;padding-left: 5px;}
+.footer_content a{text-decoration: none;color: black;}
+
+
+
+p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
+li.bg, .bg { clear:both; border:0; border-bottom:1px solid #eaeaea; padding:5px 0 0 0; margin:0 0 5px 0; background:none;}
