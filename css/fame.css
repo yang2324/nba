@@ -67,6 +67,16 @@ body {font-family: Arial;padding: 10px;background: #f1f1f1;width: 100%;backgroun
 .footer_content h5{margin-top: 10px;color: white;}
 .footer_content p{color: white;}
 
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 900px) {
+    .header_title, .header_logo {
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin: 0;
+    }
+}
 /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
 @media screen and (max-width: 400px) {
     .topnav a {
