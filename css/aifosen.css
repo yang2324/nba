@@ -48,6 +48,10 @@ a{text-decoration: none;color: #000000;}
 #fakeimg ul{position:absolute;left: 0;top: 0;}
 #fakeimg ul li {float: left;list-style: none;cursor: pointer;}
 
+.aifosen_img{width: 100%;padding: 20px;}
+.aifosen_img .img{width: 90%;margin: 0 auto;text-align: center;}
+.aifosen_img .img img{width: 30%;height: 300px;margin-left: 5px;margin-right: 5px;}
+
 /* 文章卡片效果 */
 .card {background-color: white;padding: 20px;margin-top: 20px;}
  
@@ -64,7 +68,7 @@ a{text-decoration: none;color: #000000;}
 .footer_content p{color: white;}
  
 /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .leftcolumn, .rightcolumn,.header_left,.header_right {   
     width: 100%;
     padding: 0;

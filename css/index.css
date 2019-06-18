@@ -20,11 +20,11 @@ body {font-family: Arial;background: #f1f1f1;width: 85%;margin: 0 auto;box-shado
 
 .header_in{overflow: auto;}
 .head_logo{width: 100%;margin-bottom: 5px;overflow: hidden;}
-.logo{width: 25%;float: left;}
-.logo img{border-radius: 10px;padding: 10px;margin-left: 20px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+.logo{width: 20%;float: left;margin-left: 10px;padding: 10px;}
+.logo img{ width: 100%; border-radius: 10px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
 
 .search{width: 75%;float: right;padding-top: 10px;margin-top: 20px;}
-.search input{width: 350px;height: 40px;margin-left: 210px;vertical-align: bottom;border: 1px solid #ccc;border-radius: 5px;outline-style: none;}
+.search input{width: 45%;height: 40px;margin-left: 15%;vertical-align: bottom;border: 1px solid #ccc;border-radius: 5px;outline-style: none;}
 .bnt{width: 70px;height: 40px;border: 1px solid #ccc;text-align: center;line-height: 40px;background-color: deepskyblue;border-radius: 10px;cursor: pointer;display: inline-block;margin-left: -4px;}
 
 .head_ul{width: 95%;text-align: center;}
@@ -80,11 +80,12 @@ body {font-family: Arial;background: #f1f1f1;width: 85%;margin: 0 auto;box-shado
  
 .duncan{background: rgb(3,4,9);}
 .duncan_left{width: 50%;float: right;} 
-.duncan_intro{padding: 260px 50px 265px 130px;}
+.duncan_intro{padding: 300px 50px 265px 130px;}
 .duncan_intro h2{padding-bottom:10px;color: white;}
 .duncan_intro p{color: white;}
 .duncan_right{width: 50%;float: left;} 
 .duncan_img{padding: 160px 0 165px 0;float: left;}
+.duncan_img img{width: 90%;margin: 30px 0 0 40px;height: 500px;}
 .duncan_right .duncan_div{width: 100px;height: 50px;border: 2px solid #CCCCCC;text-align: center;line-height: 50px;margin-top: 20px;}
 .duncan_div:hover{background-color: #CCCCCC;}
 .duncan_right a{text-decoration: none;font-size: 18px;color: white;}
@@ -93,8 +94,9 @@ body {font-family: Arial;background: #f1f1f1;width: 85%;margin: 0 auto;box-shado
 .oneal{background-color: white;}
 .oneal_left{width: 50%;float: left;}
 .oneal_img{padding: 160px 0 165px 0;float: right;}
+.oneal_img img{width: 90%;margin: 30px 0 0 40px;height: 500px;}
 .oneal_right{width: 50%;float: left;}
-.oneal_intro{padding: 285px 130px 265px 80px;}
+.oneal_intro{padding: 350px 130px 265px 80px;}
 .oneal_intro h2{padding-bottom:10px;}
 .oneal_right .oneal_div{width: 100px;height: 50px;border: 2px solid #CCCCCC;text-align: center;line-height: 50px;margin-top: 20px;}
 .oneal_div:hover{background-color: #CCCCCC;}

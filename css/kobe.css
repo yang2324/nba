@@ -40,15 +40,17 @@ body {font-family: Arial;padding: 10px;background: #f1f1f1;width: 85%;margin: 0 
 .fakeimg {width: 100%;height: 500px;box-shadow: 0px 8px 16px 0px white;background-color: rgb(34,34,34);}
 .fakeimg img{width: 100%;}
 
-.content_intro{padding: 50px 0 65px 30px;}
+.content_intro{padding: 50px 0 0px 30px;height: 65%;overflow: auto;}
+/*隐藏滚动条*/
+.content_intro::-webkit-scrollbar {display: none;}
 .content_intro h2{padding-bottom:10px;color: white;}
 .content_intro p{color: white;}
-
 .kobe .kobe_img{width: 150px;height: 50px;margin-top: 15px;}
-.photo{width: 100%;margin-top: 10px;}
-.photo .photo_img{width: 90%;margin: 0 auto;text-align: center;}
-.photo img{display: block;max-width: 100%;height: 170px;}
-.img01,.img02,.img03{float: left;width: 30%;margin-right: 10px;border: 1px solid white;}
+
+.photo{height: 35%;}
+.photo_kobe{width: 95%;margin: 0 auto;}
+.photo .photo_img{width: 100%;margin: 0 auto;text-align: center;}
+.photo img{width: 20%;display: inline-block;margin-left: 10px;margin-right: 10px;}
 
 /* 文章卡片效果 */
 .card {background-color: black;padding: 40px 2px 40px 0;}
@@ -59,7 +61,7 @@ body {font-family: Arial;padding: 10px;background: #f1f1f1;width: 85%;margin: 0 
 #images_ul li{float: left;list-style: none;cursor: pointer;}
  
  
-.experience{width: 100%;background-color: whitesmoke;} 
+.experience{width: 100%;background-color: whitesmoke;overflow: hidden;} 
 .intro{width: 85%; margin: 0 auto; text-align: center;}
 .intro h2{margin-top: 20px;margin-bottom: 20px;color: red;font-size: 26px;}
 .intro .kobe_intro{width: 95%; margin: 0 auto; }
@@ -106,12 +108,13 @@ body {font-family: Arial;padding: 10px;background: #f1f1f1;width: 85%;margin: 0 
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
+    margin: 0;
   }
 }
  
 /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
 @media screen and (max-width: 400px) {
-  .topnav a {
+  .topnav a,.footer_content li {
     float: none;
     width: 100%;
   }

@@ -29,18 +29,18 @@
 		<div class="main">
 			<div class="main_left">
 				<div id="left">
-					<a href="#"><img class="pic" style="display:block;" src="../img/nbaquan.jpg" width="673" height="558"/></a> 
-					<a href="#"><img class="pic" src="../img/nbaquan02.jpg" width="670" height="555"/></a>
-					<a href="#"><img class="pic" src="../img/nbaquan03.jpg" width="670" height="555"/></a>
+					<a href="#"><img class="pic" style="display:block;" src="../img/nbaquan.jpg"  height="558"/></a> 
+					<a href="#"><img class="pic" src="../img/nbaquan02.jpg"  height="555"/></a>
+					<a href="#"><img class="pic" src="../img/nbaquan03.jpg"  height="555"/></a>
 				</div>
 			</div>
 			<div class="main_right">
 				<div class="login_input">
 					<p>
 						注册NBA篮球会员
-						<a href="login.html">已有账户 立刻登录</a><br />
+						<a href="login.php">已有账户 立刻登录</a>
 					</p>
-					
+				
 					<form name="form1" onsubmit="return checkForm()">
 						<div id="reuslt_username"></div>
 						<label for="phone">注册账号</label>
@@ -56,7 +56,7 @@
 						<input type="text" id="inputCode" name="code" placeholder="请输入验证码" onfocus="focus_code()" onblur="blur_code()"/>
 						<span class="code" id="checkCode" onclick="createCode(4)"></span>
 						<br />
-						<button type="submit" id="btn">注册</button>
+						<button type="submit" id="btn">注册</button><br />
 						<input type="checkbox" checked id="check" />
 						<a href="#">《NBA篮球会员协议》</a>
 					</form>
