@@ -1,0 +1,96 @@
+* {box-sizing: border-box;margin: 0;padding: 0;}
+body {font-family: Arial;padding: 10px;background: #f1f1f1;width: 100%;margin: 0 auto;margin: 0;padding: 0;}
+
+/* 头部标题 */
+.header {padding: 10px;overflow: hidden;background: rgb(1,114,202);}
+.header_h{width: 85%;margin: 0 auto;}
+.header .logo{width: 40%;float: left;}
+.logo img{margin-left: 20px;border-radius: 10px;}
+.header .title{width: 60%;float: right;}
+.title h1{font-size: 38px;padding: 20px;color: white;}
+
+/*主体*/
+.main{width: 85%;margin: 0 auto;}
+
+/* 导航条 */
+.topnav {overflow: hidden;padding-top: 20px;}
+
+/* 导航条链接 */
+.topnav a {float: left;display: block;color: cornflowerblue;text-align: center;text-decoration: none;}
+.topnav p{color: cornflowerblue;}
+
+/* 链接颜色修改 */
+.topnav a:hover {text-decoration:underline;}
+
+.team{box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.8);}
+.team .east{margin-top: 20px;}
+.east_logo{background: rgb(15,109,180);padding: 10px;width: 100%;overflow: hidden;}
+.east_logo_left{float: left;}
+.east_logo_p{float: left;}
+.east_logo_p h2{color: white;margin-left: 20px;margin-top: 10px;}
+
+.subarea{width: 100%;overflow: hidden;}
+.subarea h4{margin: 5px;}
+
+.southeast{width: 33.33%;float: left;}
+.southeast a{text-decoration: none;}
+.eagle{padding: 10px;background: white;overflow: hidden;}
+.wasp{padding: 10px;background: lightgray;overflow: hidden;}
+.heat{padding: 10px;background: white;overflow: hidden;}
+.magic{padding: 10px;background: lightgray;overflow: hidden;}
+.wizards{padding: 10px;background: white;overflow: hidden;}
+
+.eagle_logo{float: left;}
+.eagle_logo img{margin: 10px;border-radius: 50%;}
+.eagle_p{float: left;}
+.eagle_p h3{color: cornflowerblue;}
+.eagle_data a,.eagle_zr a{text-decoration: none;margin-right: 20px;color: black;}
+.eagle_data{margin-top: 5px;}
+.yang{border-right: 1px solid white;border-left: 1px solid white;}
+
+.atlantic{width: 33.33%;float: left;}
+.atlantic a{text-decoration: none;}
+.middle{width: 33.33%;float: left;}
+.middle a{text-decoration: none;}
+.fenqu{background: rgb(3,47,79);width: 100%;padding: 0;margin: 0;overflow: hidden;}
+.fenqu h4{color: white;background: rgb(3,47,79);}
+
+
+.icon{width: 70%;margin: 0 auto;background: white;margin-top: 20px;box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);}
+.wasp_icon{width: 50%;float: left;}
+.east_icon{width: 50%;float: left;}
+.qiudui{text-align: center;padding: 5px;}
+
+.logo_top{margin-top: 20px;}
+.logo_top ul{list-style-type: none;text-align: center;}
+.logo_top ul li{display: inline-block;margin-left: 20px;}
+.wasp_icon img,.east_icon img{border-radius: 50%;}
+
+.logo_body{margin-top: 20px;}
+.logo_body ul{list-style-type: none;text-align: center;}
+.logo_body ul li{display: inline-block;margin-left: 20px;}
+
+.logo_buttom{margin-top: 20px;}
+.logo_buttom ul{list-style-type: none;text-align: center;}
+.logo_buttom ul li{display: inline-block;margin-left: 20px;}
+
+/* 列后面清除浮动 */
+.team:after,.icon:after {content: "";display: table;clear: both;}
+
+/* 底部 */
+.footer {padding: 20px;text-align: center;background: rgb(3,4,9);margin-top: 20px;}
+.footer_content ul{list-style-type: none;}
+.footer_content ul li{display: inline-block;padding: 10px;}
+.footer_content a{text-decoration: none;color: white;font-size: 18px;border-right: 1px solid white;}
+.footer_content a:hover{color: cyan;}
+.footer_content h5{margin-top: 10px;color: white;}
+.footer_content p{color: white;}
+
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
