@@ -30,3 +30,29 @@ lunbotu.onmouseout = function () {
 	
 }
 }
+
+$(function(){
+
+	$(window).scroll(function(){
+		slideIn($(".animate-box"),230);
+	});
+
+
+	function slideIn(obj,left){
+		var targetHeight = obj.offset().top;   //目标元素到顶部的距离
+		var scrollTop = $(window).scrollTop(); //页面滚动的距离
+
+		if(scrollTop>targetHeight-400){
+			obj.animate({left:left+'px',opacity:1,filter:'Alpha(opacity=90)'},500);
+		}
+	};
+});
+
+$(function(){
+	$(".yuan").click(function(){
+		//点击菜单按钮事件
+		$(".shiping_pic").toggle();
+
+	});
+
+});
