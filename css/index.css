@@ -36,6 +36,8 @@ body {font-family: Arial;background: #f1f1f1;width: 90%;margin: 0 auto;box-shado
 #topnav{padding-bottom: 5px;}
 #lunbotu{width:100%;height: 555px;position: relative;overflow: hidden;} 
 .pic{width: 100%;}
+
+.shiping{margin: 0 auto;}
  
 .row{background-color: white;}
 .leftcolumn {float: left;width: 50%;}

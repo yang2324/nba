@@ -72,6 +72,22 @@
 	</div>
 </div>
 
+<div class="shiping">
+	<video x5-playsinline="true" playsinline="true"
+		   webkit-playsinline="true"
+		   :poster="option.cover_pic_url ? option.cover_pic_url : $bigDefaultImg"
+		   v-if="option.content_file_url"
+		   class="vedioItem"
+		   :data-try="(option.is_trial || 1).toString()"
+		   controls="controls"
+	>
+		<source src="video/trailer_test.mp4" type="video/mp4">
+		<source src="video/trailer_test.ogg" type="video/ogg">
+		<source src="video/trailer_test.webm" type="video/webm" />
+		Your browser does not support the video tag.
+	</video>
+</div>
+
 <div class="row">
   <div class="leftcolumn">
     <div class="leftcolumn_img">
