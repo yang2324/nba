@@ -53,15 +53,15 @@ $(function(){
 		//点击菜单按钮事件
 		$(".shiping_pic").toggle();
 
-		//其他移动端浏览器只能让用户自己触发
-		$(window).on('touchstart', function(){
-			$("video")[0].play();
-		});
-		// 兼容微信(微信可以自动播放)
-		document.addEventListener("WeixinJSBridgeReady", function () {
-			$("video")[0].play();
-		}, false);
-
 	});
 
 });
+
+//其他移动端浏览器只能让用户自己触发
+$(window).on('touchstart', function(){
+	$("video")[0].play();
+});
+// 兼容微信(微信可以自动播放)
+document.addEventListener("WeixinJSBridgeReady", function () {
+	$("video")[0].play();
+}, false);
